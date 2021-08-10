@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <ClickCounter />
       <HoverCounter />
+      ok
     </div>
   );
 }
