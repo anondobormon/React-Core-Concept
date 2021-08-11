@@ -1,13 +1,11 @@
 import "./App.css";
-import ClickCounter from "./Component/ClickCounter";
-import HoverCounter from "./Component/HoverCounter";
+import Clock from "./Component/Clock";
 
 function App() {
   return (
     <div className="App">
-      <ClickCounter />
-      <HoverCounter />
-      ok
+      {/* locale is an props */}
+      <Clock locale="bn-BD" />
     </div>
   );
 }
