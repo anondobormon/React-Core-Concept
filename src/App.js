@@ -1,11 +1,15 @@
 import "./App.css";
-import Clock from "./Component/Clock";
+import ClickCounter from "./Component/ClickCounter";
+import Counter from "./Component/Counter";
 
 function App() {
   return (
-    <div className="App">
-      {/* locale is an props */}
-      <Clock locale="bn-BD" />
+    <div>
+      <Counter
+        render={(count, incrementCount) => (
+          <ClickCounter count={count} incrementCount={incrementCount} />
+        )}
+      />
     </div>
   );
 }
